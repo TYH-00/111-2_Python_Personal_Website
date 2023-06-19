@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}關艾的網站{% endblock %}
+
+{% block headmessage %}
+<h2>高科大焦點新聞</h2>
+{% endblock %}
+
+{% block content %}
+<table class="table table-success table-striped table-hover">
+    <tr><td ><h3>新聞標題</h3></td></tr>
+  {% for item in data %}
+  <tr><td>{{ item.title}}</td></tr>
+  {% endfor %}
+</table>
+{% endblock %}
